@@ -1,0 +1,42 @@
+{
+  "name": "itmosoft/laravel-compliance",
+  "description": "Compliance requirement and evidence tracking for Laravel applications, with polymorphic subjects, document metadata, review decisions, and expiry monitoring.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.3",
+    "illuminate/contracts": "^12.0 || ^13.0",
+    "illuminate/database": "^12.0 || ^13.0",
+    "illuminate/support": "^12.0 || ^13.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^10.0 || ^11.0",
+    "phpunit/phpunit": "^11.5 || ^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ITMOSOFT\\Compliance\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ITMOSOFT\\Compliance\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ITMOSOFT\\Compliance\\ComplianceServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "test-coverage": "phpunit --coverage-text"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
